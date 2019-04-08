@@ -1,5 +1,6 @@
 package com.miaosha.service.model;
 
+
 import javax.validation.constraints.NotBlank;
 
 public class AccountModel {

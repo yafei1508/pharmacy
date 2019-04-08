@@ -11,6 +11,7 @@ public enum EmBusinessError implements CommonError {
 
     USER_NOTE_EXIST(20001,"用户不存在"),
     USER_LOGIN_FAIL(20002,"用户名不存在或密码错误"),
+    USER_NOT_LOGIN(20003,"用户未登录")
     ;
 
     EmBusinessError(int errCode, String errMsg) {

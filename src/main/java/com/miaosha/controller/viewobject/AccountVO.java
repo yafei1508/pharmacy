@@ -5,6 +5,16 @@ public class AccountVO {
     private String account;
     private String name;
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    private String token;
+
     public Integer getId() {
         return id;
     }

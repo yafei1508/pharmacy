@@ -7,6 +7,8 @@ import com.miaosha.response.CommonReturnType;
 import com.miaosha.service.AccountService;
 import com.miaosha.service.impl.AccountServiceImpl;
 import com.miaosha.service.model.AccountModel;
+import com.miaosha.utils.JwtUtils;
+import com.miaosha.utils.LoginToken;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,7 +29,7 @@ public class AccountController extends BaseController {
 
     @Autowired
     private HttpServletRequest httpServletRequest;
-
+    @LoginToken
     @RequestMapping(value = "/login", method = {RequestMethod.POST})
     @ResponseBody
     public CommonReturnType login(@RequestParam(name = "account", required = false) String account,
@@ -46,12 +48,10 @@ public class AccountController extends BaseController {
 
         AccountModel accountModel = accountService.validateLogin(account, password);
         //用户登录服务，校验用户登录是否合法
-
-
         //将登陆凭证加入到用户登陆成功的session内
-        this.httpServletRequest.getSession().setAttribute("IS_LOGIN", true);
-        this.httpServletRequest.getSession().setAttribute("LOGIN_USER", accountModel);
+        String token = JwtUtils.generateToken(accountModel.getAccount());
         AccountVO accountVO = this.convertFromModel(accountModel);
+        accountVO.setToken(token);
         return CommonReturnType.create(accountVO);
 
     }
@@ -66,25 +66,25 @@ public class AccountController extends BaseController {
 
     }
 
-    private String EncodeByMd5(String plainText) {
-        //定义一个字节数组
-        byte[] secretBytes = null;
-        try {
-            // 生成一个MD5加密计算摘要
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            //对字符串进行加密
-            md.update(plainText.getBytes());
-            //获得加密后的数据
-            secretBytes = md.digest();
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("没有md5这个算法！");
-        }
-        //将加密后的数据转换为16进制数字
-        String md5code = new BigInteger(1, secretBytes).toString(16);// 16进制数字
-        // 如果生成数字未满32位，需要前面补0
-        for (int i = 0; i < 32 - md5code.length(); i++) {
-            md5code = "0" + md5code;
-        }
-        return md5code;
-    }
+//    private String EncodeByMd5(String plainText) {
+//        //定义一个字节数组
+//        byte[] secretBytes = null;
+//        try {
+//            // 生成一个MD5加密计算摘要
+//            MessageDigest md = MessageDigest.getInstance("MD5");
+//            //对字符串进行加密
+//            md.update(plainText.getBytes());
+//            //获得加密后的数据
+//            secretBytes = md.digest();
+//        } catch (NoSuchAlgorithmException e) {
+//            throw new RuntimeException("没有md5这个算法！");
+//        }
+//        //将加密后的数据转换为16进制数字
+//        String md5code = new BigInteger(1, secretBytes).toString(16);// 16进制数字
+//        // 如果生成数字未满32位，需要前面补0
+//        for (int i = 0; i < 32 - md5code.length(); i++) {
+//            md5code = "0" + md5code;
+//        }
+//        return md5code;
+//    }
 }
