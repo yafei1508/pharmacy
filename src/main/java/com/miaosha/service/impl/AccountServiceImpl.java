@@ -6,6 +6,7 @@ import com.miaosha.error.BusinessException;
 import com.miaosha.error.EmBusinessError;
 import com.miaosha.service.AccountService;
 import com.miaosha.service.model.AccountModel;
+import com.miaosha.validator.ValidationResult;
 import com.miaosha.validator.ValidatorImpl;
 import com.mysql.jdbc.StringUtils;
 import org.springframework.beans.BeanUtils;
