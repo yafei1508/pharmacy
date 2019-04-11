@@ -21,7 +21,6 @@ public class BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Object handlerException(HttpServletRequest request, Exception ex) {
-        ex.printStackTrace();
         Map<String, Object> responseData = new HashMap<>();
         if(ex instanceof BusinessException) {
             BusinessException businessException = (BusinessException) ex;

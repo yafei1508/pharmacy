@@ -30,19 +30,31 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
+        <table tableName = "drug" domainObjectName="DrugDO"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"
+               enableCountByExample="false"></table>
+        <table tableName = "drug_of_table" domainObjectName="DrugOfTableDO"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"
+               enableCountByExample="false"></table>
+
 <!--        <table tableName = "user_info" domainObjectName="UserDO"-->
 <!--               enableUpdateByExample="false"-->
 <!--               enableDeleteByExample="false"-->
 <!--               enableSelectByExample="false"-->
 <!--               selectByExampleQueryId="false"-->
 <!--               enableCountByExample="false"></table>-->
-        <!--<table tableName = "user_password" domainObjectName="UserPasswordDAO"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false"
-               enableSelectByExample="false"
-               selectByExampleQueryId="false"
-               enableCountByExample="false"></table>
-               -->
+<!--        <table tableName = "user_password" domainObjectName="UserPasswordDAO"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"-->
+<!--               enableCountByExample="false"></table>-->
         <!--<table tableName="item" domainObjectName="ItemDAO"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

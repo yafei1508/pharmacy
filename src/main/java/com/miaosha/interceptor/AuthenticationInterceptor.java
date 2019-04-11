@@ -2,13 +2,9 @@ package com.miaosha.interceptor;
 
 import com.miaosha.error.BusinessException;
 import com.miaosha.error.EmBusinessError;
-import com.miaosha.response.CommonReturnType;
 import com.miaosha.utils.JwtUtils;
 import com.miaosha.utils.LoginToken;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -30,12 +26,22 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
 
         HandlerMethod handlerMethod = (HandlerMethod)handler;
         Method method = handlerMethod.getMethod();
-        if(method.isAnnotationPresent(LoginToken.class)) {
-            return true;
-        }else {
-            System.out.println("拦截token");
-            JwtUtils.validateToken(token);
-            return true;
-        }
+//        if(method.isAnnotationPresent(LoginToken.class)) {
+//            return true;
+//        }else {
+//            //token = "eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50IjoiYWRtaW4iLCJleHAiOjE1NTQ3Nzg0OTh9.GlNCrSh1KcgaliaS0kINMqD4B04-CzN5rW5pjFS_VHQ";
+//            try{
+//                String account = JwtUtils.validateToken(token);
+//                if(account==null || account.isEmpty()) {
+//                    throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
+//                }else {
+//                    return true;
+//                }
+//            }catch (io.jsonwebtoken.ExpiredJwtException e) {
+//                throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
+//            }
+//
+//        }
+        return true;
     }
 }

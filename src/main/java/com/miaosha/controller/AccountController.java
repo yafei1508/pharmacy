@@ -55,6 +55,14 @@ public class AccountController extends BaseController {
         return CommonReturnType.create(accountVO);
 
     }
+    @RequestMapping(value = "/logout", method = {RequestMethod.GET})
+    @ResponseBody
+    public CommonReturnType logout() throws BusinessException {
+
+        return CommonReturnType.create(EmBusinessError.PARAMETER_VALIDATION_ERROR);
+    }
+
+
 
     private AccountVO convertFromModel(AccountModel accountModel) {
         AccountVO accountVO = new AccountVO();

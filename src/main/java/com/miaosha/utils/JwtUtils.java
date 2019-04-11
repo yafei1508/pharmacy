@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class JwtUtils {
-    private static long EXPIRATION_TIME = 3600000;
+    private static long EXPIRATION_TIME = 60 * 60 * 24;
     private static String SECRET = "MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjY34DFDSSSdMDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjY34DFDSSSd==MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjY34DFDSSSd==MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjY34DFDSSSd==";
 
     /**
@@ -24,7 +24,6 @@ public class JwtUtils {
         HashMap<String, Object> map = new HashMap<>();
         // you can put any data in the map
         map.put("account", account);
-        System.out.println(SECRET);
         String jwt = Jwts.builder().setClaims(map).setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(SignatureAlgorithm.HS256,SECRET).compact();
         return jwt;
@@ -36,17 +35,17 @@ public class JwtUtils {
      * @param token
      * @return
      */
-    public static Integer validateToken(String token) throws BusinessException {
+    public static String validateToken(String token)  {
         if (token != null) {
             Map<String, Object> body = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody();
             String account = (String) (body.get("account"));
             if (account == null || account.isEmpty()) {
-                throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
+                return null;
             } else {
-                return Integer.valueOf(account);
+                return account;
             }
         } else {
-            throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
+            return null;
         }
     }
 
