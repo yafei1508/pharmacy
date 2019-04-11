@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec19e74f-690a-421d-a5ae-a0dbcbc7e3ce" name="Default" comment="u">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/MedicineTableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/viewobject/MedicineTableVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/DrugOfTableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/MedicineTableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/impl/DrugOfTableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/impl/MedicineTableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/model/DrugModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/model/DrugOfTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/service/model/MedicineTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/interceptor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/utils/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaosha/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaosha/controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/interceptor/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaosha/interceptor/AuthenticationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaosha/service/impl/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/utils/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaosha/utils/JwtUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,18 +43,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/service/impl/DrugOfTableServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/controller/viewobject/MedicineTableVO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -98,14 +65,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/controller/MedicineTableController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+            <state relative-caret-position="285">
+              <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,18 +117,6 @@
                 <element signature="e#204#205#0" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
                 <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/dao/MedicineTableDOMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/miaosha/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaosha/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaosha/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/ItemStockDAOMapper.xml" />
@@ -254,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miaosha/service/impl/DrugOfTableServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaosha/controller/viewobject/MedicineTableVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaosha/controller/MedicineTableController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -393,6 +369,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="gener&#9;PSI&#9;JAVA://com.miaosha.service.impl.OrderServiceImpl#generateOrderNo&#10;Seque&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/resources/mapping/SequenceInfoDAOMapper.xml&#10;Sequen&#9;PSI&#9;JAVA://com.miaosha.dao.SequenceInfoDAOMapper&#10;Ite&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/dao/ItemStockDAOMapper.java&#10;ItemStock&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/resources/mapping/ItemStockDAOMapper.xml&#10;User&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/service/UserService.java&#10;po&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/pom.xml&#10;UserCon&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/controller/UserController.java&#10;Us&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/service/impl/UserServiceImpl.java&#10;EM&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/error/EmBusinessError.java&#10;USER_NOTE_EXIST&#9;PSI&#9;JAVA://com.miaosha.error.EmBusinessError#USER_NOTE_EXIST&#10;u&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/service/impl/UserServiceImpl.java&#10;UserSer&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/service/UserService.java&#10;UserD&#9;FILE&#9;file:///Users/lyf/Desktop/java_workspace/miaosha/src/main/java/com/miaosha/dao/UserDAOMapper.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -543,7 +520,7 @@
       <workItem from="1554792897115" duration="1560000" />
       <workItem from="1554950269553" duration="1720000" />
       <workItem from="1554963942000" duration="12250000" />
-      <workItem from="1554986982912" duration="250000" />
+      <workItem from="1554986982912" duration="860000" />
     </task>
     <task id="LOCAL-00001" summary="u">
       <created>1554773820107</created>
@@ -556,7 +533,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122716000" />
+    <option name="totallyTimeSpent" value="123326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,7 +558,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8182957" weight="0.2855615" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8182957" visible="true" weight="0.2855615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37641025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,7 +569,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32959184" />
-      <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.3272727" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3272727" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="15" weight="0.32959184" />
       <window_info anchor="bottom" id="ANTLR Preview" order="16" weight="0.32959184" />
@@ -621,13 +598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/app/apache-maven-3.6.0/repo/io/jsonwebtoken/jjwt-impl/0.10.5/jjwt-impl-0.10.5.jar!/io/jsonwebtoken/impl/DefaultJwtBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/service/impl/ItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
@@ -739,13 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1075,11 +1038,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miaosha/controller/MedicineTableController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        <state relative-caret-position="285">
+          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
