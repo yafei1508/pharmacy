@@ -59,7 +59,7 @@ public class AccountController extends BaseController {
     @ResponseBody
     public CommonReturnType logout() throws BusinessException {
 
-        return CommonReturnType.create(EmBusinessError.PARAMETER_VALIDATION_ERROR);
+        return CommonReturnType.create(null);
     }
 
 

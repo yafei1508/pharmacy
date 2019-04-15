@@ -1,29 +1,14 @@
-package com.miaosha.service.model;
+package com.miaosha.controller.viewobject;
 
 import java.math.BigDecimal;
 
-public class DrugModel {
-    // 药品id
+public class DrugVO {
     private Integer id;
-    // 药品名称
     private String name;
-    // 药品计量单位
     private String unit;
-    // 描述
-    private String description;
-    // 单价
     private BigDecimal price;
-
+    private String description;
     private Integer priority;
-
-
-    public Integer getPriority() {
-        return priority;
-    }
-
-    public void setPriority(Integer priority) {
-        this.priority = priority;
-    }
 
     public Integer getId() {
         return id;
@@ -49,6 +34,14 @@ public class DrugModel {
         this.unit = unit;
     }
 
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -57,11 +50,11 @@ public class DrugModel {
         this.description = description;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public Integer getPriority() {
+        return priority;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setPriority(Integer priority) {
+        this.priority = priority;
     }
 }

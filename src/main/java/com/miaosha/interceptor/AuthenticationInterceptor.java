@@ -37,10 +37,9 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
 //                }else {
 //                    return true;
 //                }
-//            }catch (io.jsonwebtoken.ExpiredJwtException e) {
+//            }catch (io.jsonwebtoken.JwtException e) {
 //                throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
 //            }
-//
 //        }
         return true;
     }

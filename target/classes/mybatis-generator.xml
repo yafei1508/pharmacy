@@ -6,7 +6,7 @@
 <generatorConfiguration>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://39.96.94.113:3306/inpatient_pharmacy_management_subsystem"
                         userId="root"
                         password="lyf150808">

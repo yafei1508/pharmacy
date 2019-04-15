@@ -1,14 +1,16 @@
-package com.miaosha.service.model;
+package com.miaosha.controller.viewobject;
 
-public class DrugOfTableModel {
+public class DrugOfTableVO {
     // id
     private Integer id;
     // 摆药单id
     private Integer medicineTableId;
     // 药品id
-    private Integer drugId;
+    private DrugVO drug;
     // 药品剂量
     private Integer dose;
+    // 医嘱中对每个药品的的各种注意事项
+    private String description;
 
     public String getDescription() {
         return description;
@@ -17,8 +19,6 @@ public class DrugOfTableModel {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    private String description;
 
     public Integer getId() {
         return id;
@@ -36,12 +36,12 @@ public class DrugOfTableModel {
         this.medicineTableId = medicineTableId;
     }
 
-    public Integer getDrugId() {
-        return drugId;
+    public DrugVO getDrug() {
+        return drug;
     }
 
-    public void setDrugId(Integer drugId) {
-        this.drugId = drugId;
+    public void setDrug(DrugVO drug) {
+        this.drug = drug;
     }
 
     public Integer getDose() {
