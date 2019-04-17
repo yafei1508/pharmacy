@@ -2,6 +2,8 @@ package com.miaosha.service.impl;
 
 import com.miaosha.dao.DrugDOMapper;
 import com.miaosha.dataobject.DrugDO;
+import com.miaosha.error.BusinessException;
+import com.miaosha.error.EmBusinessError;
 import com.miaosha.service.DrugService;
 import com.miaosha.service.model.DrugModel;
 import org.springframework.beans.BeanUtils;
@@ -13,7 +15,7 @@ public class DrugServiceImpl implements DrugService {
     @Autowired
     private DrugDOMapper drugDOMapper;
     @Override
-    public DrugModel getDrugModelById(Integer id) {
+    public DrugModel getDrugModelById(Integer id) throws BusinessException {
         DrugDO drugDO = drugDOMapper.selectByPrimaryKey(id);
         if(drugDO == null) {
             return null;

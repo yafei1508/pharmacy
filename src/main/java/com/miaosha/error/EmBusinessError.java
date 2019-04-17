@@ -6,7 +6,7 @@ public enum EmBusinessError implements CommonError {
 
     //未知错误
     UNKNOWN_ERROR(30001, "未知错误"),
-    STOCK_ERROR(40001,"库存操作错误"),
+    DATABASE_OPTION_ERROR(40001,"数据库操作错误"),
 
 
     USER_NOTE_EXIST(20001,"用户不存在"),
