@@ -13,10 +13,7 @@ import com.miaosha.service.model.DrugOfStockOutTableModel;
 import com.miaosha.service.model.StockOutTableModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.LinkedList;
@@ -24,6 +21,7 @@ import java.util.List;
 
 @Controller("stockout")
 @RequestMapping("/stockout")
+@CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
 public class StockOutController {
     @Autowired
     private StockOutTableService stockOutTableService;

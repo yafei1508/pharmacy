@@ -4,5 +4,5 @@ import com.miaosha.error.BusinessException;
 import com.miaosha.service.model.DrugModel;
 
 public interface DrugService {
-    public DrugModel getDrugModelById(Integer id) throws BusinessException;
+    DrugModel getDrugModelById(Integer id) throws BusinessException;
 }

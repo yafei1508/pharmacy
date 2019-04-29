@@ -9,6 +9,15 @@ public class DrugVO {
     private BigDecimal price;
     private String description;
     private Integer priority;
+    private Integer stock;
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
 
     public Integer getId() {
         return id;
