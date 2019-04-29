@@ -11,6 +11,15 @@ public class DrugVO {
     private Integer priority;
     //申请数量
     private Integer applyNums=0;
+    private Integer stock;
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
 
     public Integer getId() {
         return id;
@@ -59,7 +68,6 @@ public class DrugVO {
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
-
     public Integer getApplyNums() {
         return applyNums;
     }

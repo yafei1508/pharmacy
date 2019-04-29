@@ -2,7 +2,7 @@ package com.miaosha.response;
 
 public class CommonReturnType {
     //表明对应请求的返回结果"success" 和 "fail"
-    //TODO 申请失败时，status返回了refused,这些东西在哪儿设置比较好git pull origin master --allow-unrelated-histories
+    //TODO 申请失败时，status返回了refused,这些东西在哪儿设置比较好
     private String status;
     private Object data;
 

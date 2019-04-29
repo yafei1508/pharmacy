@@ -30,6 +30,7 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
+
         <!--<table tableName = "stock_application_table" domainObjectName="SatDO"-->
         <!--enableUpdateByExample="false"-->
         <!--enableDeleteByExample="false"-->
@@ -54,6 +55,30 @@
                <!--enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false"-->
                <!--enableCountByExample="false"></table>-->
+
+
+
+
+                <table tableName = "drug" domainObjectName="DrugDO"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"
+               enableCountByExample="false"></table>
+<!--        <table tableName = "processed_medicine_table" domainObjectName="ProcessedMedicineTableDO"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"-->
+<!--               enableCountByExample="false"></table>-->
+
+
+<!--        <table tableName = "drug_of_table" domainObjectName="DrugOfTableDO"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"-->
+<!--               enableCountByExample="false"></table>-->
 
 <!--        <table tableName = "user_info" domainObjectName="UserDO"-->
 <!--               enableUpdateByExample="false"-->
